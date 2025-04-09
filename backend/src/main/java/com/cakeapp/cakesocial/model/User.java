@@ -1,9 +1,9 @@
 package com.cakeapp.cakesocial.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 public class User {
@@ -15,7 +15,6 @@ public class User {
     private String role;
     private String email;
 
-    // Constructors, Getters, Setters
     public User() {}
     public User(String username, String password, String role, String email) {
         this.username = username;

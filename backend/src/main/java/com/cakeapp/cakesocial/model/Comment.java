@@ -1,10 +1,10 @@
 package com.cakeapp.cakesocial.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Comment {
@@ -17,7 +17,6 @@ public class Comment {
     @ManyToOne
     private Product product;
 
-    // Getters, Setters
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
     public String getText() { return text; }
